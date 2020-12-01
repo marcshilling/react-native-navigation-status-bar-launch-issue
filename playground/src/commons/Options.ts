@@ -14,6 +14,14 @@ const SHOW_DURATION = 250 * (useSlowOpenScreenAnimations ? 2.5 : 1);
 
 const setDefaultOptions = () =>
   Navigation.setDefaultOptions({
+    statusBar: {
+      style: 'light',
+    },
+    topBar: {
+      background: {
+        color: 'red',
+      },
+    },
     window: {
       backgroundColor: Colors.primary,
     },

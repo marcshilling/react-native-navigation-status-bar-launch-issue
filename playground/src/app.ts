@@ -23,7 +23,10 @@ function start() {
   setDefaultOptions();
   Navigation.events().registerAppLaunchedListener(async () => {
     Navigation.dismissAllModals();
-    setRoot();
+
+    setTimeout(() => {
+      setRoot();
+    }, 5000);
   });
 }
 
